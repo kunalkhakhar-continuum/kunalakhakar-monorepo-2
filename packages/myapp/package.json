@@ -1,6 +1,7 @@
 {
   "name": "kunalakhakhar-myapp-2",
   "version": "0.1.2",
+  "license": "ISC",
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
