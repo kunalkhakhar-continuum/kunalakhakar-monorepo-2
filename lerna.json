@@ -8,7 +8,7 @@
   "command": {
     "publish": {
       "npmClient": "npm",
-      "verifyAccess": false,
+      "verifyAccess": false
     }
   }
 }
