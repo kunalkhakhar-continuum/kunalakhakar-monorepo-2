@@ -14,7 +14,9 @@
     "prebuild": "yarn del-dist",
     "build": "tsc",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "preversion": "node ./scripts/prepare.js",
+    "prepare": "node ./scripts/prepare.js"
   },
   "peerDependencies": {
     "@material-ui/core": "^1.x",
