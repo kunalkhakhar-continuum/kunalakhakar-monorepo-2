@@ -66,7 +66,7 @@ module.exports  = function () {
             // lerna throws an error in case there are no changed packages
             log('there are no changed packages to publish, hence build all packages');
             allPackagesBuilt = true;
-            buildPackages(allManagedPackages);
+            // buildPackages(allManagedPackages);
             return;
         }
     }
