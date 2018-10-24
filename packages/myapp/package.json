@@ -1,6 +1,6 @@
 {
   "name": "kunalakhakhar-myapp-2",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
@@ -12,7 +12,7 @@
     "@material-ui/icons": "^1.1.0",
     "classnames": "^2.2.5",
     "history": "^4.7.2",
-    "kunalakhakhar-shared-2": "^1.0.1",
+    "kunalakhakhar-shared-2": "^1.0.2",
     "mobx": "^4.3.1",
     "mobx-react": "^5.2.2",
     "mobx-state-router": "^3.1.2",
