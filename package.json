@@ -3,7 +3,7 @@
   "description": "React, MobX, Material-UI monorepo using TypeScript",
   "version": "1.0.0",
   "private": true,
-  "author": "Naresh Bhatia",
+  "author": "kunal khakhar <kunal.khakhar@continuum.net",
   "license": "MIT",
   "repository": {
     "type": "git",

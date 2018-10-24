@@ -1,8 +1,8 @@
 {
   "name": "kunalakhakhar-shared-2",
   "description": "Shared components",
+  "author": "kunal khakhar <kunal.khakhar@continuum.net",
   "version": "1.0.2",
-  "author": "Naresh Bhatia",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
