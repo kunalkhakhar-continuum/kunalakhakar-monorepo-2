@@ -29,12 +29,14 @@ module.exports  = function () {
 
     const allManagedPackages = lerna('ls').split('\n'); // list all managed packages
 
-    const isEndofPackageList = (line) => line.indexOf('lastTagName:') > -1;
+    const isEndofPackageList = (line) => line && line.indexOf('lastTagName:') > -1;
 
     const getChangedPackages = (output) => {
         const stdout = output.split('\n').reverse();
         let i = 0;
         const packages = [];
+        // log('getChangedPackages');
+        // log(output);
         while(!isEndofPackageList(stdout[i])) {
             packages.push(stdout[i]);
             i++;
@@ -60,13 +62,15 @@ module.exports  = function () {
             const output = lerna('changed'); // get only the packages that have updated since last tag
             log(output);
             changedPackages = getChangedPackages(output);
+            // log(JSON.stringify(changedPackages));
             lerna('publish --canary --yes');
-            buildRemainingPackages();
+            // buildRemainingPackages();
         } catch(e) {
             // lerna throws an error in case there are no changed packages
             log('there are no changed packages to publish, hence build all packages');
             allPackagesBuilt = true;
-            // buildPackages(allManagedPackages);
+            log(e);
+            buildPackages(allManagedPackages);
             return;
         }
     }
