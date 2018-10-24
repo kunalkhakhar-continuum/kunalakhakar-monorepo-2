@@ -63,7 +63,7 @@ module.exports  = function () {
             log(output);
             changedPackages = getChangedPackages(output);
             // log(JSON.stringify(changedPackages));
-            lerna('publish --canary --yes');
+            lerna('publish');
             // buildRemainingPackages();
         } catch(e) {
             // lerna throws an error in case there are no changed packages
